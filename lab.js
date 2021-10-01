@@ -15,8 +15,12 @@ if (lovesCode === true)  {
   console.log("I love to code!");
 
 }
-else {
+else if(lovesCode === false) {
   console.log("Coding has its challenges.")
+}
+
+else {
+  console.log("lovesCode is not true or false")
 }
 
 
@@ -35,12 +39,12 @@ var brittanisBirthYear = 1986
 
 //CODE HERE
 
-if (brittanisAge > amysAge) {
+if (brittanisAge > amysAge ) {
 
   console.log ('brittan is older')
 }
 
-else if ( brittanisAge < amysAge) {
+else if (amysAge > brittanisAge) {
   console.log ('amy is older')
 
 }
@@ -87,7 +91,7 @@ if (temperature >= 80 && rain ) {
   console.log ('one should wear a t-shirt and take an umbrella')
 }
 
-else if ( temperature > 60 || < 80 && rain) {
+else if ( temperature > 60 && < 80 && rain) {
   console.log ('one should wear a rain-jacket')
 
 }
@@ -109,6 +113,7 @@ else { console.log ('one should wear a vikiny')
 */
 
 //CODE HERE
+
 for (var sayHello = 0; sayHello < 10; sayHello++) {
   console.log('hello');
 }
@@ -120,6 +125,9 @@ for (var sayHello = 0; sayHello < 10; sayHello++) {
 */
 
 //CODE HERE
+for (var sayHello = 1; sayHello <= 10; sayHello++) {
+  console.log(sayHello);
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -129,6 +137,12 @@ for (var sayHello = 0; sayHello < 10; sayHello++) {
 */
 
 //CODE HERE
+for (var sayHello = 10; sayHello > 0; sayHello--) {
+  console.log(sayHello);
+}
+
+
+
 
 let score = 0
 let passingScore = 7
@@ -136,10 +150,17 @@ let passingScore = 7
 ////////// PROBLEM 8 //////////
 
 /*
-  Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
+  Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. 
+  In each iteration of the loop, increase the score by one. 
+  If your code is successful, you will see your logged statement 7 times.
 */
 
 //CODE HERE
+var score = 0;
+  while (passingScore <= 7) {
+  score++;
+  console.log(score "Your score is not high enough");
+}
 
 ////////// INTERMEDIATE PROBLEMS //////////
 
@@ -152,11 +173,23 @@ let passingScore = 7
 
 //CODE HERE
 
+var changeMyMind = true;
+while (changeMyMind) {
+  changeMyMind = !changeMyMind;
+
+  console.log(changeMyMind);
+}
+
+
 ////////// PROBLEM 10 //////////
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
 //CODE HERE
 
+for (var changeMyMind = true; 
+  changeMyMind= false--) {
+  console.log(changeMyMind);
+}
 
 
 ////////// ADVANCED PROBLEMS //////////
