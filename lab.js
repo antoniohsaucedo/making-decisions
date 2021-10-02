@@ -217,17 +217,10 @@ let z = 5
 
 let z = 5
 
+while(z>0) {
+  console.log(z)
+  z--
 
-while (z > 0) {
-  if (z ){
-    z -= 1
-
-    console.log(z);
-  }
-
-   else if (z ){
-    z -= 0
-
-    console.log(z);
-  }
+  for(let x = z; x > 0; x--)
+     console.log(x)
 }
