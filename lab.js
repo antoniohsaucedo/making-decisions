@@ -91,20 +91,17 @@ if (temperature >= 80 && rain ) {
   console.log ('one should wear a t-shirt and take an umbrella')
 }
 
-else if ( temperature > 60 && < 80 && rain) {
+else if ( temperature >= 60 && 80 && rain) {
   console.log ('one should wear a rain-jacket')
 
 }
   
 
-else if ( temperature <= 60  ) {
+else if ( temperature <= 60 ) {
   console.log ('one should wear a big big jacket and carry an umbrella')
 
 }
 
-
-else { console.log ('one should wear a vikiny')
-}
 
 ////////// PROBLEM 5 //////////
 
@@ -125,8 +122,8 @@ for (var sayHello = 0; sayHello < 10; sayHello++) {
 */
 
 //CODE HERE
-for (var sayHello = 1; sayHello <= 10; sayHello++) {
-  console.log(sayHello);
+for (var i = 1; i <= 10; i++) {
+  console.log(i);
 }
 
 
@@ -137,8 +134,8 @@ for (var sayHello = 1; sayHello <= 10; sayHello++) {
 */
 
 //CODE HERE
-for (var sayHello = 10; sayHello > 0; sayHello--) {
-  console.log(sayHello);
+for (var i = 10; i > 0; i--) {
+  console.log(i);
 }
 
 
@@ -156,11 +153,19 @@ let passingScore = 7
 */
 
 //CODE HERE
-var score = 0;
-  while (passingScore <= 7) {
-  score++;
-  console.log(score "Your score is not high enough");
+
+while (score < 7) {
+  if (passingScore ){
+    score += 1
+
+    console.log( "Your score is not high enough");
+
+  }
 }
+
+
+
+
 
 ////////// INTERMEDIATE PROBLEMS //////////
 
@@ -173,11 +178,17 @@ var score = 0;
 
 //CODE HERE
 
-var changeMyMind = true;
-while (changeMyMind) {
-  changeMyMind = !changeMyMind;
+let changeMyMind = true;
 
-  console.log(changeMyMind);
+
+if (changeMyMind == false) {
+  changeMyMind = true;
+  console.log("the variable was false so we change the variable to true");
+
+} else if (changeMyMind == true) {
+  changeMyMind = false;
+  console.log("the variable was true so we change the variable to false");
+
 }
 
 
@@ -186,17 +197,37 @@ while (changeMyMind) {
 
 //CODE HERE
 
-for (var changeMyMind = true; 
-  changeMyMind= false--) {
+while (changeMyMind || !changeMyMind) {
   console.log(changeMyMind);
 }
-
 
 ////////// ADVANCED PROBLEMS //////////
 
 ////////// PROBLEM 11 //////////
 
 let z = 5
-// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
+// Create a while loop that continues to run while z is greater than 0. 
+// Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. 
+// If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+
+
+
+
+let z = 5
+
+
+while (z > 0) {
+  if (z ){
+    z -= 1
+
+    console.log(z);
+  }
+
+   else if (z ){
+    z -= 0
+
+    console.log(z);
+  }
+}
